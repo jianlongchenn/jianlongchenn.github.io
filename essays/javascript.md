@@ -13,8 +13,9 @@ labels:
 
 ## Do something that only 1% people can do
 
-During the 21th century, the world changed rapidly. People must keep learning to avoid falling behind.That is why I like the word “dig”, which literally means to break up and move soil using a tool, a machine, or your hands. In my opinion we need to dig deep to learn what others can't. Everything began with easy and then changed to hard.
+During the 21th century, the world changed rapidly. People must keep learning to avoid falling behind.That is why I like the word “dig”, which literally means to break up and move soil using a tool, a machine, or your hands. In my opinion we need to dig deep to learn what others can't. 
 
+Everything began with easy and then changed to hard.
 Knowing “1+1=2” did not means that you are matering mathematica and ready to get a job. You have to learn calculus, geometry, and discrete mathematics etc. You need to persevere when others can't and It also means that you need to bear more pressure than other people. That is why career competition exists, more advantages and specialties will make you more competitive.
 
 In the 314 class, we already have more advantages than other people, because we have a nice professor and receive a more systematic education. Doing WOD one more time will familiarize you with the code. Just like the process of digging, learning is a cumulative process, and work every day is the key.
