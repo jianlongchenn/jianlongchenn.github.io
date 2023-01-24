@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/micromouse/micromouse-square.webp
+image: img/battle.webp
 title: "Pokemonbattle"
 date: 2023
 published: true
