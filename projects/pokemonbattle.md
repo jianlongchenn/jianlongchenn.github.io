@@ -43,4 +43,4 @@ public class Charmeleon extends Charmander {
    }
 ```
 
-You can learn more at the [UH Micromouse News Announcement](https://github.com/jianlongchenn/jianlongchenn.github.io/blob/main/Charmeleon.java).
+You can learn more at the [Sourse](https://github.com/jianlongchenn/jianlongchenn.github.io/blob/main/Charmeleon.java).
