@@ -6,7 +6,7 @@ title: "Jamba Juice class"
 date: 2023
 published: true
 labels:
-  - javaScript
+  - javascript
 summary: "My first javaScript class made in ICS 314"
 ---
 
