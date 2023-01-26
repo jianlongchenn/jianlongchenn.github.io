@@ -16,7 +16,7 @@ summary: "A project made in 2021 at KCC"
 
 Pokémon Battle is a program in which two Pokémon are selected to fight with each other. First set the attributes of the Pokémon, including HP, attack power, defense power and so on. The Pokémon of both sides will fight until the HP reaches zero. It also includes attribute restraint. For example, water-type Pokémon will cause more damage to fire-type Pokémon, and electric-type Pokémon will cause more damage to water-type Pokémon.
 
-Here is some code that illustrates how we read values from the line sensors:
+Here is some code :
 
 ```cpp
 public class Charmeleon extends Charmander {
