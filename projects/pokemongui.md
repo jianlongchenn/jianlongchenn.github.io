@@ -54,4 +54,4 @@ public class PokemonPanel extends JPanel {
    private JPanel fourthSubpanel = new JPanel();
 ```
 
-You can learn more at the [Sourse](https://github.com/jianlongchenn/jianlongchenn.github.io/blob/main/Charmeleon.java).
+You can learn more at the [Sourse](https://github.com/jianlongchenn/jianlongchenn.github.io/blob/main/PokemonPanel.java).
