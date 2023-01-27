@@ -64,6 +64,7 @@ With the sorted data, the code runs in 1.93 seconds.
 (Sorting itself takes more time than this one pass over the array, so it's not actually worth doing if we needed to calculate this for an unknown array.)
 ```
 From this question, we can see the person is well prepared before asking the question and his problem is precise and informative. He did a lot of research by himself and tried it on C++ and Java.That is why the person got 26860 vote for his question and people are willing to help him with his problems.
+
 You can see more detail at the [Sourse](https://stackoverflow.com/questions/11227809/why-is-processing-a-sorted-array-faster-than-processing-an-unsorted-array)
 
 ## A Stupid question 
@@ -115,4 +116,5 @@ public class questionTwelve
 }
 ```
 From the title XXX homework, we can see that this is a bad question. The first sentence at the beginning said that person forgot to do his homework because of the time is late. It can be seen from his statement that he has not tried and worked hard, what he wants is more like a result. Therefore, he got -3 vote for his question. 
+
 You can see more detail at the [Sourse](https://stackoverflow.com/questions/5271563/binary-search-homework)
