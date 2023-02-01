@@ -1,39 +1,24 @@
 ---
 layout: essay
 type: essay
-title: "Learning is the process of digging"
+title: ""
 # All dates must be YYYY-MM-DD format!
-date: 2023-01-18
+date: 2023-02-01
 published: true
 labels:
   - Engineering
 ---
 
-<img width="200px" class="rounded float-start pe-4" src="../img/dig.png">
+<img width="300px" class="rounded float-start pe-4" src="../img/adventure.jfif">
 
-## Do something that only 1% people can do
+## Before college
 
-During the 21th century, the world changed rapidly. People must keep learning to avoid falling behind.That is why I like the word “dig”, which literally means to break up and move soil using a tool, a machine, or your hands. In my opinion we need to dig deep to learn what others can't. 
+Before I started college, I have neven been experienced with computer science. My high school life was spent in China, most computer classes that I took before were like working with excel or powerpoint, but I have been obsessed with FC games since I was a child, and dreamed that I could make my own game. After coming to the United States, I decided that my major was computer science. Although I passed the ESOL course, I found that the language is still my biggest obstacle. I believe I can overcome this difficulty, because it's my own choice.
 
-Everything began with easy and then changed to hard.
-Knowing “1+1=2” did not means that you are matering mathematica and ready to get a job. You have to learn calculus, geometry, and discrete mathematics etc. You need to persevere when others can't and It also means that you need to bear more pressure than other people. That is why career competition exists, more advantages and specialties will make you more competitive.
+## After high school
 
-In the 314 class, we already have more advantages than other people, because we have a nice professor and receive a more systematic education. Doing WOD one more time will familiarize you with the code. Just like the process of digging, learning is a cumulative process, and work every day is the key.
+Writing code was not easy for me. Many homeworks from other courses takes me around double or trible times as long as other students. At the beginning, all the seats of ICS 314 were full, and I was lucky to be drawn from the waitlist. I have great expectations for this class and I am so excited about making web pages,In my opinion a good website can make a good first impression on others.
 
-<img width="200px" class="rounded float-start pe-4" src="../img/begin.jpg">
+## Software engineeringe
 
-## The First time of meeting JavaScript
-
-I am a complete beginner of JavaScript but freeCodeCamp helps me a lot. After the first week, I found that JavaScript is easy to understand and learn. 
-
-One of my favorite advantages of JavaScript is the speed. JavaScript reduces the time required by other programming languages like Java for compilation. However, one thing that worries me is safety because Since the JavaScript code is viewable to the user, others may use it for malicious purposes. 
-
-Overall JavaScript is a good programming language for software engineering. 
-
-<img width="200px" class="rounded float-start pe-4" src="../img/interest.png">
-
-## Doing the thing that you like
-
-If the main goal of life can be combined with your own interests, then this will not only add a lot of happiness to your life, but also stimulate your potential and promote your skill. If people can find themselves interests, then it already has the beginning of the road to success . 
-
-As for me, the best way to learn something is to combine it with your favorite things. Making games in JavaScript would be the best way for me to practice.
+Software engineering let me know that the development of a software project is actually a project, and the entire development process can be effectively organized; for each stage of the development process, there are already many best practices for solving problems, and there are many ways to help us efficiently Complete tasks; we can also use tools to assist management and improve development efficiency
