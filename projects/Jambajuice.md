@@ -7,6 +7,7 @@ date: 2023
 published: true
 labels:
   - javaScript
+  - programming
 summary: "My first javaScript class made in ICS 314"
 ---
 
