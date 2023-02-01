@@ -14,7 +14,7 @@ summary: "A project made in 2021 at KCC"
   <img width="400px" src="../img/pokegui.jpeg" >
 
 
-The Pokemon GUI have two sections. The top section will be for catching Pokemon.
+The Pokemon GUI have two sections. The top section will be for catching Pokemon. the program will catch Pokémon, and Pokémon has a chance to escape. Simulated the scene of capturing Pokémon in the animation, the trainer has a chance to use the ball to capture the Pokémon, but if the Pokémon runs out of the ball, it means that the capture fails
 
 The bottom section will be like your "backpack" and will display the list of captured Pokemon in various ways.
 
