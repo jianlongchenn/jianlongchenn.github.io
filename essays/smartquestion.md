@@ -6,7 +6,8 @@ title: "Question 101"
 date: 2023-01-26
 published: true
 labels:
-  - Engineering 
+  - Engineering
+  - Smart question
 ---
 
 <img width="200px" class="rounded float-start pe-4" src="../img/question.jfif">
