@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-title: "work efficiently"
+title: "Work efficiently"
 # All dates must be YYYY-MM-DD format!
 date: 2023-02-23
 published: true
@@ -29,7 +29,7 @@ However working with Boosrap is a little bit confusing at the beginning, because
 
 ## Benefits
 
-<img width="300px" src="../img/uiframe.png"
+<img width="300px" src="../img/uiframe.png">
 
 Using UI Frameworks are also a lot of benefit for software engineers.
 
