@@ -29,7 +29,7 @@ However working with Boosrap is a little bit confusing at the beginning, because
 
 ## Benefits
 
-<img width="200px" class="rounded float-start pe-4" src="../img/uiframe.png">
+<img width="200px"  src="../img/UI.png">
 
 Using UI Frameworks are also a lot of benefit for software engineers.
 
