@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Question 101 | Jianlong Chen | Professional Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="https://github.com/jianlongchenn.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Jianlong Chen | Professional Portfolio">
+    <meta property="og:url" content="https://jianlongchenn.github.io/essays/smartquestion.html">
+    <meta property="og:title" content="Question 101 | Jianlong Chen | Professional Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://github.com/jianlongchenn.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/techfolio-theme/default.css">
+    <link rel="stylesheet" type="text/css" href="/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>Question 101 | Jianlong Chen | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Jianlong Chen</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/#projects">Projects</a>
+        <a class="nav-link" href="/#essays">Essays</a>
+        <a class="nav-link" href="/resume.html">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="container py-4">
+  <h1 class="display-4">Question 101</h1>
+  <span class="date">26 Jan 2023</span>
+  <hr>
+  <p><img width="200px" class="rounded float-start pe-4" src="../img/question.jfif" /></p>
+
+<h2 id="how-to-ask">How to ask</h2>
+
+<p>Asking questions is an important skill that everyone must acquire in life. This skill can efficiently fill the knowledge which you don’t know. In China’s inherent culture, interrupting others’ speech is considered bad manners. In Western culture, it will be regarded as a manifestation of respect for the speaker, because you asked a question, it means you listened carefully to the speech. Good questions will help questionees develop their understanding, that is why asking smart questions is important.</p>
+
+<h2 id="a-smart-question">A Smart question</h2>
+
+<p>I found an example which I think is a smart question on StackOverflow.</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">Q:</span> <span class="n">Why</span> <span class="n">is</span> <span class="n">processing</span> <span class="n">a</span> <span class="n">sorted</span> <span class="n">array</span> <span class="n">faster</span> <span class="n">than</span> <span class="n">processing</span> <span class="n">an</span> <span class="n">unsorted</span> <span class="n">array</span><span class="o">?</span>
+
+<span class="n">Here</span> <span class="n">is</span> <span class="n">a</span> <span class="n">piece</span> <span class="n">of</span> <span class="n">C</span><span class="o">++</span> <span class="n">code</span> <span class="n">that</span> <span class="n">shows</span> <span class="n">some</span> <span class="n">very</span> <span class="n">peculiar</span> <span class="n">behavior</span><span class="p">.</span>
+
+<span class="n">For</span> <span class="n">some</span> <span class="n">reason</span><span class="p">,</span> <span class="n">sorting</span> <span class="n">the</span> <span class="nf">data</span> <span class="p">(</span><span class="n">before</span> <span class="n">the</span> <span class="n">timed</span> <span class="n">region</span><span class="p">)</span> <span class="n">miraculously</span> <span class="n">makes</span> <span class="n">the</span> <span class="n">primary</span> <span class="n">loop</span> <span class="n">almost</span> <span class="n">six</span> <span class="n">times</span> <span class="n">faster</span><span class="o">:</span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;algorithm&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;ctime&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span>
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="c1">// Generate data</span>
+    <span class="k">const</span> <span class="kt">unsigned</span> <span class="n">arraySize</span> <span class="o">=</span> <span class="mi">32768</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">data</span><span class="p">[</span><span class="n">arraySize</span><span class="p">];</span>
+
+    <span class="k">for</span> <span class="p">(</span><span class="kt">unsigned</span> <span class="n">c</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">c</span> <span class="o">&lt;</span> <span class="n">arraySize</span><span class="p">;</span> <span class="o">++</span><span class="n">c</span><span class="p">)</span>
+        <span class="n">data</span><span class="p">[</span><span class="n">c</span><span class="p">]</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">rand</span><span class="p">()</span> <span class="o">%</span> <span class="mi">256</span><span class="p">;</span>
+
+    <span class="c1">// !!! With this, the next loop runs faster.</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">sort</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">data</span> <span class="o">+</span> <span class="n">arraySize</span><span class="p">);</span>
+
+    <span class="c1">// Test</span>
+    <span class="kt">clock_t</span> <span class="n">start</span> <span class="o">=</span> <span class="n">clock</span><span class="p">();</span>
+    <span class="kt">long</span> <span class="kt">long</span> <span class="n">sum</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">unsigned</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">100000</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">unsigned</span> <span class="n">c</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">c</span> <span class="o">&lt;</span> <span class="n">arraySize</span><span class="p">;</span> <span class="o">++</span><span class="n">c</span><span class="p">)</span>
+        <span class="p">{</span>   <span class="c1">// Primary loop.</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">c</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">128</span><span class="p">)</span>
+                <span class="n">sum</span> <span class="o">+=</span> <span class="n">data</span><span class="p">[</span><span class="n">c</span><span class="p">];</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="kt">double</span> <span class="n">elapsedTime</span> <span class="o">=</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span><span class="p">(</span><span class="n">clock</span><span class="p">()</span><span class="o">-</span><span class="n">start</span><span class="p">)</span> <span class="o">/</span> <span class="n">CLOCKS_PER_SEC</span><span class="p">;</span>
+
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">elapsedTime</span> <span class="o">&lt;&lt;</span> <span class="sc">'\n'</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"sum = "</span> <span class="o">&lt;&lt;</span> <span class="n">sum</span> <span class="o">&lt;&lt;</span> <span class="sc">'\n'</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="n">Without</span> <span class="n">std</span><span class="o">::</span><span class="n">sort</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">data</span> <span class="o">+</span> <span class="n">arraySize</span><span class="p">);,</span> <span class="n">the</span> <span class="n">code</span> <span class="n">runs</span> <span class="n">in</span> <span class="mf">11.54</span> <span class="n">seconds</span><span class="p">.</span>
+<span class="n">With</span> <span class="n">the</span> <span class="n">sorted</span> <span class="n">data</span><span class="p">,</span> <span class="n">the</span> <span class="n">code</span> <span class="n">runs</span> <span class="n">in</span> <span class="mf">1.93</span> <span class="n">seconds</span><span class="p">.</span>
+<span class="p">(</span><span class="n">Sorting</span> <span class="n">itself</span> <span class="n">takes</span> <span class="n">more</span> <span class="n">time</span> <span class="n">than</span> <span class="k">this</span> <span class="n">one</span> <span class="n">pass</span> <span class="n">over</span> <span class="n">the</span> <span class="n">array</span><span class="p">,</span> <span class="n">so</span> <span class="n">it</span><span class="err">'</span><span class="n">s</span> <span class="n">not</span> <span class="n">actually</span> <span class="n">worth</span> <span class="n">doing</span> <span class="k">if</span> <span class="n">we</span> <span class="n">needed</span> <span class="n">to</span> <span class="n">calculate</span> <span class="k">this</span> <span class="k">for</span> <span class="n">an</span> <span class="n">unknown</span> <span class="n">array</span><span class="p">.)</span>
+</code></pre></div></div>
+<p>From this question, we can see the person is well prepared before asking the question and his problem is precise and informative. He did a lot of research by himself and tried it on C++ and Java.That is why the person got 26860 vote for his question and people are willing to help him with his problems.</p>
+
+<p>You can see more detail at the <a href="https://stackoverflow.com/questions/11227809/why-is-processing-a-sorted-array-faster-than-processing-an-unsorted-array">Sourse</a></p>
+
+<h2 id="a-stupid-question">A Stupid question</h2>
+
+<p>The following is an example of the opposite.</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">Q:</span><span class="n">Binary</span> <span class="n">Search</span> <span class="n">Homework</span>
+
+<span class="n">It</span><span class="err">'</span><span class="n">s</span> <span class="n">late</span><span class="p">,</span> <span class="n">I</span><span class="err">'</span><span class="n">m</span> <span class="n">tired</span> <span class="n">and</span> <span class="n">forgot</span> <span class="n">I</span> <span class="n">had</span> <span class="n">java</span> <span class="n">homework</span><span class="p">.</span> <span class="n">Last</span> <span class="n">question</span> <span class="n">is</span> <span class="n">to</span> <span class="n">write</span> <span class="n">a</span> <span class="n">Java</span> <span class="n">program</span> <span class="n">to</span> <span class="n">find</span> <span class="n">the</span> <span class="n">value</span> <span class="mf">45.3</span> <span class="n">from</span> <span class="k">this</span> <span class="n">list</span> <span class="p">{</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">24</span><span class="p">,</span><span class="mf">45.3</span><span class="p">,</span><span class="mf">10.5</span><span class="p">}</span> <span class="k">using</span> <span class="n">the</span> <span class="n">binary</span> <span class="n">search</span> <span class="n">method</span><span class="p">.</span>
+
+<span class="n">Normally</span> <span class="n">I</span><span class="err">'</span><span class="n">d</span> <span class="n">be</span> <span class="n">fine</span> <span class="n">but</span> <span class="n">I</span> <span class="n">really</span> <span class="n">don</span><span class="err">'</span><span class="n">t</span> <span class="n">want</span> <span class="n">to</span> <span class="n">have</span> <span class="n">to</span> <span class="n">rush</span> <span class="k">this</span> <span class="n">in</span> <span class="n">the</span> <span class="n">morning</span> <span class="n">and</span> <span class="n">I</span><span class="err">'</span><span class="n">m</span> <span class="n">too</span> <span class="n">tired</span> <span class="n">to</span> <span class="n">think</span> <span class="n">straight</span> <span class="n">so</span> <span class="n">hopefully</span> <span class="n">someone</span> <span class="n">can</span> <span class="n">help</span> <span class="n">at</span> <span class="n">least</span> <span class="n">a</span> <span class="n">little</span> <span class="n">bit</span><span class="p">.</span>
+
+<span class="n">Here</span> <span class="n">is</span> <span class="n">the</span> <span class="n">code</span><span class="o">:</span>
+
+<span class="k">public</span> <span class="k">class</span> <span class="nc">questionTwelve</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">static</span> <span class="kt">int</span> <span class="n">binarySearch</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="kt">int</span> <span class="n">low</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="kt">int</span> <span class="n">high</span> <span class="o">=</span> <span class="n">a</span><span class="p">.</span><span class="n">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+        <span class="kt">int</span> <span class="n">mid</span><span class="p">;</span>
+        <span class="kt">int</span> <span class="n">foundindex</span><span class="p">;</span>
+
+        <span class="k">while</span> <span class="p">(</span><span class="n">low</span> <span class="o">&lt;=</span> <span class="n">high</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">mid</span> <span class="o">=</span> <span class="p">(</span><span class="n">low</span> <span class="o">+</span> <span class="n">high</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">;</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">mid</span><span class="p">].</span><span class="n">compareTo</span> <span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span>
+                <span class="n">low</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+            <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">mid</span><span class="p">].</span><span class="n">compareTo</span> <span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span>
+                <span class="n">high</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+            <span class="k">else</span>
+                <span class="n">foundindex</span> <span class="o">=</span> <span class="n">mid</span><span class="p">.</span><span class="n">getIndex</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">static</span> <span class="kt">void</span> <span class="n">main</span><span class="p">(</span><span class="n">String</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="kt">int</span> <span class="n">a</span><span class="p">[];</span>
+        <span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mi">3</span><span class="p">;</span>
+        <span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+        <span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+        <span class="n">a</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="mf">10.5</span><span class="p">;</span>
+        <span class="n">a</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="mi">24</span><span class="p">;</span>
+        <span class="n">a</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">=</span> <span class="mf">45.3</span><span class="p">;</span>
+
+        <span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Value 45.3 found at index "</span> <span class="o">+</span> <span class="n">binarySearch</span><span class="p">(</span><span class="mf">45.3</span><span class="p">));</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>From the title XXX homework, we can see that this is a bad question. The first sentence at the beginning said that person forgot to do his homework because of the time is late. It can be seen from his statement that he has not tried and worked hard, what he wants is more like a result. Therefore, he got -3 vote for his question.</p>
+
+<p>You can see more detail at the <a href="https://stackoverflow.com/questions/5271563/binary-search-homework">Sourse</a></p>
+
+</div>
+
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
