@@ -11,7 +11,7 @@ labels:
   - Design patterns
 ---
 
-<img width="300px" class="rounded float-start pe-4" src="../img/dota.jpeg">
+<img width="300px" class="rounded float-start pe-4" src="../img/Dota.jpeg">
 
 ## As a rookie
 As a gamer, one of the most important aspects of playing a MOBA game is to understand how to build your item. The first time I played a MOBA game. I will choose the building that has the highest win rate and usage rate, because it is a safe choice that has been proven to work by a lot of players.
