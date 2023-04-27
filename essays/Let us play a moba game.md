@@ -26,4 +26,4 @@ Just as there are many different item combinations that we can use in the MOBA g
 
 As beginners, we often come into contact with this well-known design pattern at the beginning, maybe like the Singleton pattern or the Factory pattern. After getting a better understanding of this software, we will gradually find a design pattern that is more suitable for us.
 
-In conclusion, whether we are building items in a MOBA game or designing software. The most important thing is to lay a solid foundation. Then on this basis we can improve and innovate our own code.for each stage of the development process, there are already many best practices for solving problems, and there are many ways to help us efficiently Complete tasks; we can also use tools to assist management and improve development efficiency
+In conclusion, whether we are building items in a MOBA game or designing software. The most important thing is to lay a solid foundation. Then on this basis we can improve and innovate our own code.
