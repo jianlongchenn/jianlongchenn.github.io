@@ -72,7 +72,7 @@ You can see more detail at the [Sourse](https://stackoverflow.com/questions/1122
 
 The following is an example of the opposite.
 
-```cpp
+```cpp 
 Q:Binary Search Homework
 
 It's late, I'm tired and forgot I had java homework. Last question is to write a Java program to find the value 45.3 from this list {-3,10,5,24,45.3,10.5} using the binary search method.
