@@ -28,7 +28,7 @@ As beginners, we often come into contact with this well-known design pattern at 
 
 This is the code from our final project. In this code we have been use Prototype pattern and Singleton pattern.
 
-'''cpp
+```cpp
 import { Mongo } from 'meteor/mongo';
 import SimpleSchema from 'simpl-schema';
 
@@ -60,6 +60,6 @@ class RecipesCollection {
 }
 
 export const Recipes = new RecipesCollection();
-'''
+```
 
 In conclusion, whether we are building items in a MOBA game or designing software. The most important thing is to lay a solid foundation. Then on this basis we can improve and innovate our own code.
