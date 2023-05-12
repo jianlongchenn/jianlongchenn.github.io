@@ -17,7 +17,7 @@ labels:
 
 Throughout the course, I have learned so much about software engineering. From the basics of programming languages to complex frameworks and design patterns, I have gained a deeper understanding of the intricacies of web development. I am grateful for the opportunity to learn and apply these skills in real-life projects and assignments. 
 
-To be honest, I was flustered when I was asked to master JavaScript in a short period of time in the first week. Because the time is too short and I didn't choose any courses about computer science in the last semester before taking this class.
+To be honest, I was flustered when I was asked to master JavaScript in a short period of time in the first week. Because the time was too short and I didn't choose any courses about computer science in the last semester before taking this class.
 
 The weekly wods gave me a good opportunity to exercise. I failed at some wods at the beginning, but then I slowly started to catch up with the rhythm and completed a lot of wods. With the learning of Boostrap, meteor, and react,  I have been able to delve deeper into the intricacies of web development. By exploring the capabilities and features of these powerful frameworks and librarie I am able to add more features to my website.
 
