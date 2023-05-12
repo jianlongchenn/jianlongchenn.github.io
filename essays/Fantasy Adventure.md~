@@ -7,6 +7,7 @@ date: 2023-02-01
 published: true
 labels:
   - Engineering
+  - Coding
 ---
 
 <img width="300px" class="rounded float-start pe-4" src="../img/adventure.jfif">
