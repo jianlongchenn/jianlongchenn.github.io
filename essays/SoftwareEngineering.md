@@ -19,7 +19,7 @@ Throughout the course, I have learned so much about software engineering. From t
 
 To be honest, I was flustered when I was asked to master JavaScript in a short period of time in the first week. Because the time was too short and I didn't choose any courses about computer science in the last semester before taking this class.
 
-The weekly wods gave me a good opportunity to exercise. I failed at some wods at the beginning, but then I slowly started to catch up with the rhythm and completed a lot of wods. With the learning of Boostrap, meteor, and react,  I have been able to delve deeper into the intricacies of web development. By exploring the capabilities and features of these powerful frameworks and librarie I am able to add more features to my website.
+The weekly WODs gave me a good opportunity to exercise. I failed at some wods at the beginning, but I slowly started to catch up with the rhythm and completed a lot of WODs. With the learning of Boostrap, meteor, and react,  I have been able to delve deeper into the intricacies of web development. By exploring the capabilities and features of these powerful frameworks and librarie I am able to add more features to my website.
 
 <img width="300px" class="rounded float-start pe-4" src="../img/soft.jfif">
 
