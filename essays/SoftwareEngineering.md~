@@ -1,9 +1,9 @@
 ---
 layout: essay
 type: essay
-title: "Let's play a Moba game!"
+title: "The Fantastic Journey of Software Engineering!"
 # All dates must be YYYY-MM-DD format!
-date: 2023-04-27
+date: 2023-05-10
 published: true
 labels:
   - Engineering

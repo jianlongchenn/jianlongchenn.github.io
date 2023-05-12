@@ -9,57 +9,20 @@ labels:
   - Engineering
   - Coding
   - Design patterns
+  - Coding standards
 ---
 
-<img width="300px" class="rounded float-start pe-4" src="../img/Dota.jpeg">
+<img width="300px" class="rounded float-start pe-4" src="../img/final.jpg">
 
-## As a rookie
-As a gamer, one of the most important aspects of playing a MOBA game is to understand how to build your item. The first time I played a MOBA game. I will choose the building that has the highest win rate and usage rate, because it is a safe choice that has been proven to work by a lot of players.
+## Look back
 
-After becoming more familiar with the game, I will decide to make some modifications to the basic building. Such as changing the order of the item or changing one of the item. The ultimate goal is to improve my game winning rate and game experience.
+After a semester of software engineering study. I learned a lot. To be honest, I was very flustered when I was asked to master JavaScript in a short period of time in the first week. Because the time is too short and I didn't choose any courses about computer science in the last semester before taking this class.
+The weekly wods gave me a good opportunity to exercise. I failed at some wods at the beginning, but then I slowly started to catch up with the rhythm and completed a lot of wods. With the learning of Boostrap, meteor, and react,  I have been able to delve deeper into the intricacies of web development. By exploring the capabilities and features of these powerful frameworks and librarie I am able to add more features to my website.
 
-## Budding pattern vs. design pattern
+<img width="300px" class="rounded float-start pe-4" src="../img/soft.jfif">
 
-<img width="300px" class="rounded float-start pe-4" src="../img/design-pattern.jpeg">
+## Teamwork
+Teamwork is essential in software development. Communication is actually my weakness because English is not my first language. Sometimes I can't express my thoughts excitedly. Assuming we don't have coding standards, then when we do group projects, everyone's code has its own characteristics, which is very unfavorable for other people's reading. Coding Standards solves this  problem nicely, Because of the use of eslint, In the process of the final project, our code is easy to understand, which saves a lot of communication time about each other's code.
+In the final project we also use the design pattern such as prototype pattern and singleton pattern. For example, the prototype pattern allows us to create new objects based on existing ones, reducing the need to write new code and improving performance.
 
-Just as there are many different item combinations that we can use in the MOBA game, there are many different design patterns we can use for software development. Some design patterns are well-known and widely used, while others are more specialized and less common.
-
-As beginners, we often come into contact with this well-known design pattern at the beginning, maybe like the Singleton pattern or the Prototype pattern. After getting a better understanding of this software, we will gradually find a design pattern that is more suitable for us.
-
-This is the code from our final project. In this code we have been use Prototype pattern and Singleton pattern.
-
-```cpp
-import { Mongo } from 'meteor/mongo';
-import SimpleSchema from 'simpl-schema';
-
-/** Encapsulates state and variable values for this collection. */
-class RecipesCollection {
-  constructor() {
-    // The name of this collection.
-    this.name = 'RecipesCollection';
-    // Define the Mongo collection.
-    this.collection = new Mongo.Collection(this.name);
-    // Define the structure of each document in the collection.
-    this.schema = new SimpleSchema({
-      name: { type: String, index: true, unique: true },
-      owner: String,
-      image: { type: String, optional: true },
-      instructions: { type: String, optional: false },
-      time: { type: String, optional: false },
-      servings: { type: Number, optional: false },
-      vegan: { type: Boolean, optional: true, defaultValue: false },
-      glutenFree: { type: Boolean, optional: true, defaultValue: false },
-    });
-    // Ensure collection documents obey schema.
-    this.collection.attachSchema(this.schema);
-    // Define names for publications and subscriptions
-    this.userPublicationName = `${this.name}.publication.user`;
-    this.vendorPublicationName = `${this.name}.publication.vendor`;
-    this.adminPublicationName = `${this.name}.publication.admin`;
-  }
-}
-
-export const Recipes = new RecipesCollection();
-```
-
-In conclusion, whether we are building items in a MOBA game or designing software. The most important thing is to lay a solid foundation. Then on this basis we can improve and innovate our own code.
+In the end, I think this course is the closest to reality that I have ever been exposed to. It also pointed the way for my career.
