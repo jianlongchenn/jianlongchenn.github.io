@@ -7,7 +7,7 @@ date: 2023
 published: true
 labels:
   - java
-summary: "a project made in 2021 at KCC"
+summary: "A project made in 2021 at KCC"
 ---
 
 
