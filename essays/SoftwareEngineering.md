@@ -7,7 +7,6 @@ date: 2023-05-10
 published: true
 labels:
   - Engineering
-  - Coding
   - Design patterns
   - Coding standards
 ---
