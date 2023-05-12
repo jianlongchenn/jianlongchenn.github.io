@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Let's play a Moba game! | Jianlong Chen | Professional Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="https://github.com/jianlongchenn.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Jianlong Chen | Professional Portfolio">
+    <meta property="og:url" content="https://jianlongchenn.github.io/essays/designpattern.html">
+    <meta property="og:title" content="Let's play a Moba game! | Jianlong Chen | Professional Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://github.com/jianlongchenn.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/techfolio-theme/default.css">
+    <link rel="stylesheet" type="text/css" href="/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>Let's play a Moba game! | Jianlong Chen | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Jianlong Chen</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/#projects">Projects</a>
+        <a class="nav-link" href="/#essays">Essays</a>
+        <a class="nav-link" href="/resume.html">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="container py-4">
+  <h1 class="display-4">Let's play a Moba game!</h1>
+  <span class="date">27 Apr 2023</span>
+  <hr>
+  <p><img width="300px" class="rounded float-start pe-4" src="../img/Dota.jpeg" /></p>
+
+<h2 id="as-a-rookie">As a rookie</h2>
+<p>As a gamer, one of the most important aspects of playing a MOBA game is to understand how to build your item. The first time I played a MOBA game. I will choose the building that has the highest win rate and usage rate, because it is a safe choice that has been proven to work by a lot of players.</p>
+
+<p>After becoming more familiar with the game, I will decide to make some modifications to the basic building. Such as changing the order of the item or changing one of the item. The ultimate goal is to improve my game winning rate and game experience.</p>
+
+<h2 id="budding-pattern-vs-design-pattern">Budding pattern vs. design pattern</h2>
+
+<p><img width="300px" class="rounded float-start pe-4" src="../img/design-pattern.jpeg" /></p>
+
+<p>Just as there are many different item combinations that we can use in the MOBA game, there are many different design patterns we can use for software development. Some design patterns are well-known and widely used, while others are more specialized and less common.</p>
+
+<p>As beginners, we often come into contact with this well-known design pattern at the beginning, maybe like the Singleton pattern or the Prototype pattern. After getting a better understanding of this software, we will gradually find a design pattern that is more suitable for us.</p>
+
+<p>This is the code from our final project. In this code we have been use Prototype pattern and Singleton pattern.</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">import</span> <span class="p">{</span> <span class="n">Mongo</span> <span class="p">}</span> <span class="n">from</span> <span class="err">'</span><span class="n">meteor</span><span class="o">/</span><span class="n">mongo</span><span class="err">'</span><span class="p">;</span>
+<span class="n">import</span> <span class="n">SimpleSchema</span> <span class="n">from</span> <span class="err">'</span><span class="n">simpl</span><span class="o">-</span><span class="n">schema</span><span class="err">'</span><span class="p">;</span>
+
+<span class="cm">/** Encapsulates state and variable values for this collection. */</span>
+<span class="k">class</span> <span class="nc">RecipesCollection</span> <span class="p">{</span>
+  <span class="n">constructor</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// The name of this collection.</span>
+    <span class="k">this</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="err">'</span><span class="n">RecipesCollection</span><span class="err">'</span><span class="p">;</span>
+    <span class="c1">// Define the Mongo collection.</span>
+    <span class="k">this</span><span class="p">.</span><span class="n">collection</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Mongo</span><span class="p">.</span><span class="n">Collection</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="n">name</span><span class="p">);</span>
+    <span class="c1">// Define the structure of each document in the collection.</span>
+    <span class="k">this</span><span class="p">.</span><span class="n">schema</span> <span class="o">=</span> <span class="k">new</span> <span class="n">SimpleSchema</span><span class="p">({</span>
+      <span class="nl">name:</span> <span class="p">{</span> <span class="n">type</span><span class="o">:</span> <span class="n">String</span><span class="p">,</span> <span class="n">index</span><span class="o">:</span> <span class="nb">true</span><span class="p">,</span> <span class="n">unique</span><span class="o">:</span> <span class="nb">true</span> <span class="p">},</span>
+      <span class="nl">owner:</span> <span class="n">String</span><span class="p">,</span>
+      <span class="nl">image:</span> <span class="p">{</span> <span class="n">type</span><span class="o">:</span> <span class="n">String</span><span class="p">,</span> <span class="n">optional</span><span class="o">:</span> <span class="nb">true</span> <span class="p">},</span>
+      <span class="nl">instructions:</span> <span class="p">{</span> <span class="n">type</span><span class="o">:</span> <span class="n">String</span><span class="p">,</span> <span class="n">optional</span><span class="o">:</span> <span class="nb">false</span> <span class="p">},</span>
+      <span class="nl">time:</span> <span class="p">{</span> <span class="n">type</span><span class="o">:</span> <span class="n">String</span><span class="p">,</span> <span class="n">optional</span><span class="o">:</span> <span class="nb">false</span> <span class="p">},</span>
+      <span class="nl">servings:</span> <span class="p">{</span> <span class="n">type</span><span class="o">:</span> <span class="n">Number</span><span class="p">,</span> <span class="n">optional</span><span class="o">:</span> <span class="nb">false</span> <span class="p">},</span>
+      <span class="nl">vegan:</span> <span class="p">{</span> <span class="n">type</span><span class="o">:</span> <span class="n">Boolean</span><span class="p">,</span> <span class="n">optional</span><span class="o">:</span> <span class="nb">true</span><span class="p">,</span> <span class="n">defaultValue</span><span class="o">:</span> <span class="nb">false</span> <span class="p">},</span>
+      <span class="nl">glutenFree:</span> <span class="p">{</span> <span class="n">type</span><span class="o">:</span> <span class="n">Boolean</span><span class="p">,</span> <span class="n">optional</span><span class="o">:</span> <span class="nb">true</span><span class="p">,</span> <span class="n">defaultValue</span><span class="o">:</span> <span class="nb">false</span> <span class="p">},</span>
+    <span class="p">});</span>
+    <span class="c1">// Ensure collection documents obey schema.</span>
+    <span class="k">this</span><span class="p">.</span><span class="n">collection</span><span class="p">.</span><span class="n">attachSchema</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="n">schema</span><span class="p">);</span>
+    <span class="c1">// Define names for publications and subscriptions</span>
+    <span class="k">this</span><span class="p">.</span><span class="n">userPublicationName</span> <span class="o">=</span> <span class="err">`$</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="n">name</span><span class="p">}.</span><span class="n">publication</span><span class="p">.</span><span class="n">user</span><span class="err">`</span><span class="p">;</span>
+    <span class="k">this</span><span class="p">.</span><span class="n">vendorPublicationName</span> <span class="o">=</span> <span class="err">`$</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="n">name</span><span class="p">}.</span><span class="n">publication</span><span class="p">.</span><span class="n">vendor</span><span class="err">`</span><span class="p">;</span>
+    <span class="k">this</span><span class="p">.</span><span class="n">adminPublicationName</span> <span class="o">=</span> <span class="err">`$</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="n">name</span><span class="p">}.</span><span class="n">publication</span><span class="p">.</span><span class="n">admin</span><span class="err">`</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">export</span> <span class="k">const</span> <span class="n">Recipes</span> <span class="o">=</span> <span class="k">new</span> <span class="n">RecipesCollection</span><span class="p">();</span>
+</code></pre></div></div>
+
+<p>In conclusion, whether we are building items in a MOBA game or designing software. The most important thing is to lay a solid foundation. Then on this basis we can improve and innovate our own code.</p>
+
+</div>
+
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

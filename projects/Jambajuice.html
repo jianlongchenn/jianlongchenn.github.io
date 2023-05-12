@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Jamba Juice class | Jianlong Chen | Professional Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="https://github.com/jianlongchenn.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Jianlong Chen | Professional Portfolio">
+    <meta property="og:url" content="https://jianlongchenn.github.io/projects/Jambajuice.html">
+    <meta property="og:title" content="Jamba Juice class | Jianlong Chen | Professional Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://github.com/jianlongchenn.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/techfolio-theme/default.css">
+    <link rel="stylesheet" type="text/css" href="/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>Jamba Juice class | Jianlong Chen | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Jianlong Chen</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/#projects">Projects</a>
+        <a class="nav-link" href="/#essays">Essays</a>
+        <a class="nav-link" href="/resume.html">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="container py-4">
+  <h1 class="display-4">Jamba Juice class</h1>
+ <p><img width="400px" src="../img/jumbamenu.jpeg" /></p>
+
+<p>This program allowed customer to order for one or more drinks and also make an inventory to determines whether or not it has sufficient ingredients to make the drink.</p>
+
+<p>Here is some code :</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">MenuItem</span><span class="p">{</span>
+	<span class="n">constructor</span> <span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="n">ingredients</span><span class="p">,</span><span class="n">prices</span><span class="p">,</span><span class="n">calories</span><span class="p">){</span>
+  	<span class="k">this</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
+  	<span class="k">this</span><span class="p">.</span><span class="n">ingredients</span> <span class="o">=</span> <span class="n">ingredients</span><span class="p">;</span>
+  	<span class="k">this</span><span class="p">.</span><span class="n">prices</span> <span class="o">=</span> <span class="n">prices</span><span class="p">;</span>
+  	<span class="k">this</span><span class="p">.</span><span class="n">calories</span> <span class="o">=</span> <span class="n">calories</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">const</span> <span class="n">papayaSunrise</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MenuItem</span> <span class="p">(</span><span class="s">"Papaya Sunrise"</span><span class="p">,</span> <span class="p">[</span><span class="s">"papaya"</span><span class="p">,</span><span class="s">"strawberry"</span><span class="p">,</span><span class="s">"peach"</span><span class="p">],</span> <span class="p">{</span><span class="n">small</span> <span class="o">:</span> <span class="mf">5.15</span><span class="p">,</span> <span class="n">medium</span> <span class="o">:</span> <span class="mf">5.75</span><span class="p">,</span> <span class="n">large</span> <span class="o">:</span> <span class="mf">6.55</span><span class="p">},</span> <span class="p">{</span><span class="n">small</span> <span class="o">:</span> <span class="mi">190</span><span class="p">,</span> <span class="n">medium</span> <span class="o">:</span> <span class="mi">280</span><span class="p">,</span> <span class="n">large</span> <span class="o">:</span> <span class="mi">330</span><span class="p">});</span>
+<span class="k">const</span> <span class="n">peachPerfection</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MenuItem</span> <span class="p">(</span><span class="s">"Peach Perfection"</span><span class="p">,</span> <span class="p">[</span><span class="s">"peach"</span><span class="p">,</span><span class="s">"mango"</span><span class="p">,</span><span class="s">"strawberry"</span><span class="p">],</span> <span class="p">{</span><span class="n">small</span> <span class="o">:</span> <span class="mf">5.15</span><span class="p">,</span> <span class="n">medium</span> <span class="o">:</span> <span class="mf">5.75</span><span class="p">,</span> <span class="n">large</span> <span class="o">:</span> <span class="mf">6.55</span><span class="p">},</span> <span class="p">{</span><span class="n">small</span> <span class="o">:</span> <span class="mi">210</span><span class="p">,</span> <span class="n">medium</span> <span class="o">:</span> <span class="mi">320</span><span class="p">,</span> <span class="n">large</span> <span class="o">:</span> <span class="mi">360</span><span class="p">});</span>
+<span class="k">const</span> <span class="n">strawberryDragon</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MenuItem</span> <span class="p">(</span><span class="s">"Strawberry Dragon"</span><span class="p">,</span> <span class="p">[</span><span class="s">"pitaya"</span><span class="p">,</span><span class="s">"strawberry"</span><span class="p">,</span><span class="s">"orange"</span><span class="p">,</span><span class="s">"passionfruit"</span><span class="p">,</span><span class="s">"mango"</span><span class="p">,</span><span class="s">"banana"</span><span class="p">],</span> <span class="p">{</span><span class="n">small</span> <span class="o">:</span> <span class="mf">5.85</span><span class="p">,</span> <span class="n">medium</span> <span class="o">:</span> <span class="mf">6.25</span><span class="p">,</span> <span class="n">large</span> <span class="o">:</span> <span class="mf">6.85</span><span class="p">},</span> <span class="p">{</span><span class="n">small</span> <span class="o">:</span> <span class="mi">360</span><span class="p">,</span> <span class="n">medium</span><span class="o">:</span> <span class="mi">480</span><span class="p">,</span> <span class="n">large</span> <span class="o">:</span> <span class="mi">610</span><span class="p">});</span>
+<span class="k">const</span> <span class="n">strawberryWhirl</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MenuItem</span> <span class="p">(</span><span class="s">"Straberry Whirl"</span><span class="p">,</span> <span class="p">[</span><span class="s">"straberry"</span><span class="p">,</span><span class="s">"banana"</span><span class="p">,</span><span class="s">"apple"</span><span class="p">],</span> <span class="p">{</span><span class="n">small</span> <span class="o">:</span> <span class="mf">5.15</span><span class="p">,</span> <span class="n">medium</span> <span class="o">:</span> <span class="mf">5.75</span><span class="p">,</span> <span class="n">large</span> <span class="o">:</span> <span class="mf">6.55</span><span class="p">},</span> <span class="p">{</span><span class="n">small</span> <span class="o">:</span> <span class="mi">210</span> <span class="p">,</span> <span class="n">medium</span> <span class="o">:</span> <span class="mi">310</span><span class="p">,</span> <span class="n">large</span> <span class="o">:</span> <span class="mi">380</span><span class="p">});</span>
+</code></pre></div></div>
+
+<p>You can learn more at the <a href="https://jsfiddle.net/jianlongchen/rzvwpeos/33/">Sourse</a>.</p>
+
+</div>
+
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
