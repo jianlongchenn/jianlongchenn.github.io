@@ -1,57 +1,49 @@
 ---
 layout: project
 type: project
-image: img/pokeback.jpeg
-title: "Pokemon GUI"
+image: img/manoarecipelogo.png
+title: "Manoa recipes"
 date: 2023
 published: true
 labels:
   - java
-summary: "A project made in 2021 at KCC"
+summary: "Final group project made in 2023 at ICS 314"
 ---
 
 
-  <img width="400px" src="../img/pokegui.jpeg" >
+  <img src="../img/finalproject.png" >
+
+## Overview
+The purpose of this application is to provide college students (on-campus or off) easy access to learn and share recipes that:
+
+Can be made using minimal kitchen facilities (at a minimum, a toaster oven).
+Can be made out of ingredients that are available within walking distance of UH.
+Suit local taste sensibilities.
+Can be filtered via dietary restrictions (gluten-free, vegan, etc).
+Have an estimated cost per serving.
+Has an estimated number of servings per recipe.
+Has an estimate of how long it takes to make.
+
+##Goal
+The goal of this site is to help improve the nutritional content and variety of foods eaten by students and help them limit the use of vending machines or fast food products by providing tasty, realistic alternatives.
+
+There are three roles in this system: students, vendors, and admins.
+
+Students can both search for and contribute recipes. Recipes not only include the typical description of how to prepare the food and a picture of the completed food, but also information on where to obtain each ingredient and how much each ingredient costs. The recipe also indicates typical dietary restrictions for students (vegan, gluten-free, etc.).
+
+Students do not necessarily have to determine the price associated with each item. Instead, there is another interface to the system for vendors. Vendors (local grocery stores and/or farmer��s markets) can login and establish a profile including their location and hours. Then, for each ingredient defined in the system, they can indicate:
+
+Whether they stock the item.
+How much it costs to buy the item.
+What is the size of the item.
+From this information, the system can automatically calculate for each recipe:
+
+All of the places near campus where each ingredient can be found.
+What the prices are for each ingredient at each place.
+Information on ingredient price and availability can be contributed either by vendors or by students.
+
+There is also an admin role. Admins can edit all content in the system, remove inappropriate content, and establish users as having the vendor role.
 
 
-The Pokemon GUI have two sections. The top section will be for catching Pokemon. the program will catch Pokémon, and Pokémon has a chance to escape. Simulated the scene of capturing Pokémon in the animation, the trainer has a chance to use the ball to capture the Pokémon, but if the Pokémon runs out of the ball, it means that the capture fails
 
-The bottom section will be like your "backpack" and will display the list of captured Pokemon in various ways.
-
-Here is part of the code:
-
-```cpp
-import java.util.Random;
-import java.awt.*;
-import javax.swing.*;
-import java.awt.event.*; //add this for the listener
-
-/**.
-* PokemonPanel for PokemonGUIJianlong.java
-* @author JianlongChen
-* @since 2020/12/10
-*/
-
-public class PokemonPanel extends JPanel {
-
-  /********* label. ************/
-   private JLabel lTitle = new JLabel("Pokemon Available");
-
-   private JLabel lMsg = new JLabel("                ");
-   
-
-  /******* button. ****************/
-   private JButton bDone = new JButton(" Make Pokemon ");
-  
-   private JButton bClear = new JButton(" Clear ");
-  
-   private JButton bList = new JButton("List Pokemon"); 
-   
-   /******* sub-panel. ***********/
-   private JPanel firstSubpanel = new JPanel();  
-   private JPanel secondSubpanel = new JPanel(); 
-   private JPanel thirdSubpanel = new JPanel(); 
-   private JPanel fourthSubpanel = new JPanel();
-```
-
-You can learn more at the [Sourse](https://github.com/jianlongchenn/jianlongchenn.github.io/blob/main/PokemonPanel.java).
+You can learn more at the [Sourse](https://manoa-recipes.github.io/).
