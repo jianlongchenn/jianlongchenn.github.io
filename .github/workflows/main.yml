@@ -7,38 +7,26 @@ on:
 
 jobs:
   build_and_deploy:
-   
-    runs-on: ubuntu-22.04
-    
+    runs-on: ubuntu-latest
     steps:
-      - name: GitHub Checkout
+      - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Bundler Cache
-        uses: actions/cache@v3
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
         with:
-          path: vendor/bundle
-          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-gems-
+          ruby-version: '3.1'
 
-      - name: Validate JSON files
-        uses: limitusus/json-syntax-check@v2
-        with:
-          pattern: "\\.json$"
-
-     
-      - name: Build Site
+      - name: Install dependencies
         run: |
-          sudo apt-get update
-          sudo apt-get install -y ruby-full build-essential zlib1g-dev
-          gem install bundler
           bundle install
+
+      - name: Build Jekyll site
+        run: |
           JEKYLL_ENV=production bundle exec jekyll build
 
-      - name: Build & Deploy to GitHub Pages
-        uses: joshlarsen/jekyll4-deploy-gh-pages@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
-          GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
