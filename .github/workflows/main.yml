@@ -7,7 +7,9 @@ on:
 
 jobs:
   build_and_deploy:
-    runs-on: ubuntu-latest
+   
+    runs-on: ubuntu-22.04
+    
     steps:
       - name: GitHub Checkout
         uses: actions/checkout@v3
@@ -24,6 +26,15 @@ jobs:
         uses: limitusus/json-syntax-check@v2
         with:
           pattern: "\\.json$"
+
+     
+      - name: Build Site
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ruby-full build-essential zlib1g-dev
+          gem install bundler
+          bundle install
+          JEKYLL_ENV=production bundle exec jekyll build
 
       - name: Build & Deploy to GitHub Pages
         uses: joshlarsen/jekyll4-deploy-gh-pages@master
