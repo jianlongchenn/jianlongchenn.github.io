@@ -6,12 +6,12 @@ on:
       - main
 
 jobs:
-
   build_and_deploy:
     runs-on: ubuntu-latest
     steps:
       - name: GitHub Checkout
         uses: actions/checkout@v3
+
       - name: Bundler Cache
         uses: actions/cache@v3
         with:
@@ -19,13 +19,16 @@ jobs:
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
           restore-keys: |
             ${{ runner.os }}-gems-
+
       - name: validate-bio-json-file
-        uses: limitusus/json-syntax-check@v2
+        uses: limitusus/json-syntax-check@<latest_version>
         with:
-          pattern: "\\.json$"
+          pattern: "\\bio.json$"
+
       - name: Build & Deploy to GitHub Pages
-        uses: joshlarsen/jekyll4-deploy-gh-pages@master
+        uses: joshlarsen/jekyll4-deploy-gh-pages@<latest_version>
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
           GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
+
