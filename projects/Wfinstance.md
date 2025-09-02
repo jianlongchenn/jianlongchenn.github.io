@@ -24,7 +24,7 @@ The **WfInstances Browser** is a web application that allows researchers to brow
 
 ## Key Features
 
-<img src="wfusage" align="left" width="300" />
+<img src="../img/wfusage.png" align="left" width="300" />
 
 - **Usage Report Modal**  
   Interactive visualization of usage metrics (downloads, simulations, visualizations) with customizable date ranges. Includes a sidebar showing the top user countries using **IPInfo** geolocation.
@@ -34,7 +34,7 @@ The **WfInstances Browser** is a web application that allows researchers to brow
 
 <br clear="left"/>
 
-<img src="wfinstance.png" align="right" width="300" />
+<img src="../img/wfinstance.png" align="right" width="300" />
 
 - **Performance Improvements**  
   Fetch workflow JSON data using Python's **git** package instead of the GitHub REST API for better performance.
