@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/af.png
+image: img/ap.png
 title: "ArcanePilferers"
 date: 2025
 published: true
@@ -22,7 +22,7 @@ You’ll battle foes across shifting worlds, **harvest souls** to power spells, 
 
 ## Features
 
-<img src="../img/pf.png" align="left" width="600" />
+<img src="../img/ap.png" align="left" width="600" />
 
 - **Rift Navigation & Crystals**: Collect and channel three magical crystals to focus rifts and advance toward the world-tree’s core.  
 - **Action Combat & Spells**: Take on assorted enemies, collect their souls, and cast spells to turn the tide.  
