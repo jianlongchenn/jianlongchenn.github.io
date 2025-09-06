@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Jianlong Chen",
-    "label": "Student",
+    "label": "Open to work",
     "picture": "https://github.com/jianlongchenn.png",
     "email": "jianlong@hawaii.edu",
     "phone": "808-354-6677",
     "website": "https://jianlongchenn.github.io",
-    "summary": "Graduated in Spring 2025 from the University of Hawaiʻi at Mānoa with a Bachelor’s degree in Computer Science.",
+    "summary": "Graduated in Spring 2025 from the University of Hawaiʻi at Mānoa with a Bachelor’s degree in Computer Science. Passionate about continuous learning and hands-on development, with experience designing and deploying modern web applications. Strong interest in full stack development, usability, and scalable system design. Always eager to explore new technologies and apply them to build practical, impactful solutions.",
     "location": { "address": "", "postalCode": "96822", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
     "profiles": [
       { "network": "github", "username": "jianlongchen", "url": "https://github.com/jianlongchenn" },
@@ -14,14 +14,14 @@
     ]
   },
   "interests": [
-    { "name": "PC game" },
+    { "name": "Learning" },
     { "name": "Hiking" },
-    { "name": "Movie" }
+    { "name": "Web building" }
   ],
   "skills": [
     {
       "name": "Languages and Frameworks",
-      "keywords": [ "C", "C++", "Java", "Javascript" ]
+      "keywords": [ "C", "C++", "Java", "Javascript", "Typescript", "React", "Python", "HTML/CSS" ]
     },
     {
       "name": "Toolsets/OS",
@@ -31,10 +31,10 @@
   "education": [
     {
       "institution": "University of Hawaii, Honolulu, HI",
-      "area": "Computer Science (expected Spring, 2024)",
+      "area": "Computer Science (expected Spring, 2025)",
       "studyType": "B.S.",
       "startDate": "2022-09-01",
-      "endDate": "Present",
+      "endDate": "2025-05",
       "courses": [
       ]
     }
